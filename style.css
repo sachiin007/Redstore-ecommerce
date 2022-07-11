@@ -1,0 +1,249 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+	display:flex;
+	padding:20px;
+	align-items: center;
+}
+nav{
+	text-align: right;
+	
+	flex: 1;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+	
+
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #555;
+	font-weight: bold;
+}
+.container{
+	
+	width: 1300px;
+	margin: auto;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+.row{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.ab{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.ab img{
+	max-width: 100%;
+	padding: 50px 0px;
+}
+.btn{
+	display: inline-block;
+	background:#ff523b ;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	font-family: sans-serif;
+
+}
+.header{
+	background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+	margin-top: 70px;
+}
+.btn:hover{
+	background: #563434;
+	transition: background 0.3s;
+}
+.categories{
+
+	margin: 70px 0
+}
+.col-3{
+	flex-basis: 30%;
+	margin-bottom: 30px;
+	min-width: 250px;
+
+}
+.col-3 img{
+	width: 100%;
+}
+.col{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 20px;
+}
+.col-4 img{
+	width: 100%;
+}
+.title{
+	text-align: center;
+	position: relative;
+	margin: 0 auto 80px;
+	line-height: 60px;
+	color: #555;
+}
+.title::after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+h4{
+	color: #555;
+	font-weight: normal;
+}
+.col-4 p{
+	color: %555;
+	font-size: 14px;
+}
+.rating fa{
+	color: #ff523b;
+}
+.col-4 :hover{
+	transform: translateY(-10px) ;
+	transition: transform 0.5s;
+}
+.offer{
+	background: radial-gradient(#fff,#ffd6d6);
+	margin-top: 80px;
+	padding: 30px o;
+}
+.ab .offer-img{
+	padding: 50px;
+}
+small{
+	font-family: sans-serif;
+	
+	color: #555;
+}
+.testimonials{
+	padding-top: 100px;
+}
+.testimonials .col-3 {
+	text-align: center;
+	padding: 40px 20px;
+   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   transition: transform 0.5s;
+}
+.testimonials .col-3 img{
+	border-radius: 50%;
+	width: 50px;
+	margin-top: 10px;
+}
+.testimonials .col-3:hover{
+	transform: translateY(-10px);
+	transition: transform 0.5s;
+}
+.fa.fa-quote-left{
+	font-size: 35px;
+	color: #ff523b;
+}
+.rating{
+	color: #ff523b;
+}
+/*------brands*/
+.brands{
+	margin: 100px auto;
+}
+.col-5{
+	width: 160px;
+}
+.col-5 img{
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(0%);
+}
+.col-5 img:hover{
+	filter: grayscale(0%);
+}
+/*-------Footer--------*/
+.footer{
+	background: #000;
+	color: #8a8a8a;
+	padding: 40px 0 40px;
+}
+.footer p{
+	color: #8a8a8a;
+}
+.footer h3{
+	color: #fff;
+	margin-bottom:20px ;
+}
+.footer col-3, .footer col-4{
+	text-align: center;
+	flex-basis: 12%;
+}
+ul{
+	list-style-type: none;
+}
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width: 160px;
+}
+
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+	margin: ;
+}
+select{
+	border: 1px solid  black;
+	padding: 5px;
+}
+select:focus {
+	outline: none;
+}
+/*to make select box same outline use select focus, right now im using black its looks better*/
+.page-btn{
+	margin: 0 auto 80px;
+}
+.page-btn span{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ff523b;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.page-btn span:hover{
+	background: #ff523b;
+	transition: 0.3s;
+	color: white;
+}
